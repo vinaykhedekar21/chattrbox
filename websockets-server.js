@@ -1,5 +1,8 @@
 /*@VinayKhedekar
-  WebSocket program for chatterbox
+  WebSocket program for chatterbox 
+  1. create websocket connection
+  2. Send messages to all connected clients
+  3. Notify all clients, If new topic is started
 */
 var WebSocket = require('ws');
 var WebSocketServer = WebSocket.Server;
