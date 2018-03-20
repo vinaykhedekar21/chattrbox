@@ -25,7 +25,7 @@ ws.on('connection', function(socket) {
     /*check whether data contains the /topic string,
       If YES then consider its a start of new topic*/
     if (data.startsWith("/topic")) {
-      var topicName = data.substring(6);
+      var topicName = data.substring(7);
       var newClientMsg = "*** Topic is '" + topicName + "'";
       var connectedClientsMsg = "*** Topic has changed to '" + topicName + "'";
       /*push new messge at the begining of message array
